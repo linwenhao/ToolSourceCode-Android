@@ -1,3 +1,4 @@
 
 rootProject.name = "ToolSourceCode"
 include ':helper'
+include ':sample'
