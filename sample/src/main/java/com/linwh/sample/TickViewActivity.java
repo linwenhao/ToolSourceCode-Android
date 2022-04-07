@@ -6,13 +6,14 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.linwh.helper.activity.BaseActivity;
 import com.linwh.helper.permission.CameraPermissionHelper;
 import com.linwh.helper.view.tickview.OnCheckedChangeListener;
 import com.linwh.helper.view.tickview.TickAnimatorListener;
 import com.linwh.helper.view.tickview.TickView;
 
 
-public class TickViewActivity extends AppCompatActivity {
+public class TickViewActivity extends BaseActivity {
 
     private static final String TAG = TickViewActivity.class.getSimpleName();
 
