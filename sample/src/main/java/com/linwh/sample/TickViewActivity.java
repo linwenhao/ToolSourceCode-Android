@@ -4,7 +4,6 @@ package com.linwh.sample;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.linwh.helper.activity.BaseActivity;
 import com.linwh.helper.permission.CameraPermissionHelper;
