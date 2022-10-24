@@ -8,6 +8,8 @@ import android.os.Build;
 import android.os.Environment;
 import android.util.Log;
 
+import com.linwh.helper.tools.DateUtils;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
@@ -199,14 +201,18 @@ public class CrashHandler implements UncaughtExceptionHandler {
         try {
 
             if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-//                String path = Environment.getExternalStorageDirectory() + "/errorLog/ARExhibition";
-                String path = Environment.getExternalStorageDirectory() + errorLogPath;
+                String path =  errorLogPath;
                 Log.e(TAG, path);
                 File dir = new File(path);
                 if (!dir.exists()) {
                     dir.mkdirs();
                 }
-                File file = new File(path + File.separator + fileName);
+                //采用时间戳
+                File file = new File(path + File.separator + DateUtils.getCurrentTime()+".txt");
+//                File file = new File(path + File.separator + fileName);
+                if (!file.getParentFile().exists()){
+                    file.getParentFile().mkdirs();
+                }
                 if (!file.exists()) {
                     file.createNewFile();
                 }

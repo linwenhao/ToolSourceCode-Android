@@ -6,7 +6,6 @@ import android.view.View;
 
 
 import com.linwh.helper.activity.BaseActivity;
-import com.linwh.helper.permission.CameraPermissionHelper;
 import com.linwh.helper.view.tickview.OnCheckedChangeListener;
 import com.linwh.helper.view.tickview.TickAnimatorListener;
 import com.linwh.helper.view.tickview.TickView;

@@ -5,7 +5,7 @@ import android.content.Context;
 /**
  * author : linwenhao
  * date   : 2022/3/30 15:55
- * desc   :
+ * desc   : 像素工具
  * version: 1.0
  */
 public class DisplayUtil {
